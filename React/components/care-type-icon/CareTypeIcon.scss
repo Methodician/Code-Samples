@@ -1,0 +1,27 @@
+// I opted to use the strict "care type" in class names to avoid conflicts with other components' scss
+@import 'shared/styles/variables.scss';
+
+.COMPANION {
+  color: $red;
+}
+.MEAL_PREP {
+  color: silver;
+}
+.HOUSEWORK {
+  color: $dark-orange;
+}
+.SHOPPING {
+  color: $cyan;
+}
+.LAUNDRY {
+  color: maroon;
+}
+.ANIMAL_CARE {
+  color: rgb(94, 61, 39);
+}
+.DRIVING {
+  color: rgb(50, 123, 202);
+}
+.HYGIENE {
+  color: $olive-green;
+}
