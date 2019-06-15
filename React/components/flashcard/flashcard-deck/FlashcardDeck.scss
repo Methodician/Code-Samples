@@ -1,0 +1,25 @@
+@import 'styles/Variables.scss';
+$footer-height: 8rem;
+
+:local(.FlashcardDeck) {
+  margin-top: $header-height;
+  font-family: $default-roboto-font;
+
+  .quiz-container {
+    height: calc(100vh - #{$header-height} - #{$footer-height} - 1rem);
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .footer-buttons-container {
+    height: 8rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlashcardDeck component should render and match snapshots 1`] = `
+<section
+  className="FlashcardDeck"
+>
+  <PageHeader
+    theme="beginner-theme"
+  >
+    <PageHeaderButton
+      Icon={[Function]}
+      click={[Function]}
+      position="left"
+      theme="light"
+    />
+    <PageHeaderTitle
+      headerText="Flashcards 3/11"
+    />
+    <PageHeaderButton
+      Icon={[Function]}
+      click={[Function]}
+      position="right"
+      theme="light"
+    />
+  </PageHeader>
+  <ProgressBar
+    length={11}
+    status={3}
+  />
+  <main
+    className="quiz-container"
+  >
+    <BackdropPanel
+      hasPadding={false}
+    >
+      <Connect(FlashcardBasic)
+        deckItem={
+          Object {
+            "CardID": "BCC-002-01-003",
+            "English1": "three",
+            "English2": "",
+            "Image": "",
+            "Multiple": "",
+            "Normal": "BCC-002-01-003-N",
+            "Notes": "",
+            "Pinyin": "sān",
+            "PracticeType": "B",
+            "RelatedCardID": "",
+            "Simplified": "三",
+            "Slow": "BCC-002-01-004-S",
+            "Traditional": "三",
+            "Word": "W",
+          }
+        }
+      />
+    </BackdropPanel>
+  </main>
+  <footer
+    className="footer-buttons-container"
+  >
+    <BackArrowButton
+      Icon={[Function]}
+      click={[Function]}
+    />
+    <SignalButton
+      buttonType="neutral"
+      click={[Function]}
+    >
+      Reveal
+    </SignalButton>
+  </footer>
+</section>
+`;

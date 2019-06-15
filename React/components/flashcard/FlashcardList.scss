@@ -1,0 +1,24 @@
+:local(.FlashcardList) {
+
+  .list-element {
+    min-height: 5.5rem;
+  }
+
+  .footer-button-container {
+    margin-top: 0.5rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    height: 4.5rem;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flashcards-icon {
+      margin-right: 0.8rem;
+    }
+  }
+}
