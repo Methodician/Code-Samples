@@ -1,0 +1,7 @@
+node_modules
+build
+
+packages/app/cordova
+packages/biz/cordova
+packages/admin/cordova
+coverage
