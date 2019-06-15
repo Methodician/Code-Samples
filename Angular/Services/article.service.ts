@@ -52,9 +52,8 @@ export class ArticleService {
       .list(`userInfo/articleBookmarksPerUser/${uid}`)
       .snapshotChanges();
 
-    // Converts a list of article ID/Keys into an array of ArticlePreview
-    // Observables, then to a single Observable of Articles in
-    // a clean, composable way
+    // Converts a list of article ID/Keys into an array of ArticlePreview Observables,
+    // then to a single Observable of Articles in a clean, composable way
     return bookmarks$.pipe(
       // switchMap is like map but removes observable nesting
       switchMap(bookmarkSnaps => {
@@ -71,8 +70,8 @@ export class ArticleService {
     );
   };
 
-  // Feeling clever - doing above in effectively one line of code does not make it better...
-  // This is an example of what I call "cryptic ninja coding" and I strongly deter my team from this behavior
+  // ANTIPATTERN: Feeling clever - doing above in effectively one line of code does not make it better...
+  // This is an example of what I call "cryptic ninja coding" and I strongly my team from this behavior
   watchBookmarkedArticlesUgly = uid =>
     this.afd
       .list(`userInfo/articleBookmarksPerUser/${uid}`)
