@@ -1,20 +1,26 @@
 // This file includes excerpts from an Angular service for working with Firebase
-import { Injectable } from "@angular/core";
+import { Injectable } from "./node_modules/@angular/core";
 
 // AngularFire Stuff
 import {
   AngularFirestore,
   AngularFirestoreDocument,
   AngularFirestoreCollection
-} from "@angular/fire/firestore";
-import { AngularFireDatabase, AngularFireList } from "@angular/fire/database";
+} from "./node_modules/@angular/fire/firestore";
+import {
+  AngularFireDatabase,
+  AngularFireList
+} from "./node_modules/@angular/fire/database";
 
 // RXJS stuff
-import { switchMap, take } from "rxjs/operators";
-import { combineLatest } from "rxjs";
+import { switchMap, take } from "./node_modules/rxjs/operators";
+import { combineLatest } from "./node_modules/rxjs";
 
 // Internal Models
-import { ArticlePreview, ArticleDetail } from "@models/interfaces/article-info";
+import {
+  ArticlePreview,
+  ArticleDetail
+} from "./node_modules/@models/interfaces/article-info";
 
 @Injectable({
   providedIn: "root"

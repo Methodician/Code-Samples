@@ -1,7 +1,7 @@
 // This file exemplifies a composable service for adding meta-tags during SSR
-import { Injectable, Inject } from "@angular/core";
-import { Meta, Title } from "@angular/platform-browser";
-import { DOCUMENT } from "@angular/common";
+import { Injectable, Inject } from "./node_modules/@angular/core";
+import { Meta, Title } from "./node_modules/@angular/platform-browser";
+import { DOCUMENT } from "./node_modules/@angular/common";
 
 @Injectable({
   providedIn: "root"
